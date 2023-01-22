@@ -1,6 +1,7 @@
 *, *::before, *::after {
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    
 }
 
 body {
@@ -12,6 +13,20 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5%;
+    padding: 4%;
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+
 
 .container {
     width: 500px;
@@ -51,7 +66,7 @@ body {
     background-color: red;
 }
 
-.start-btn, .next-btn {
+.start-btn {
     font-size: larger;
     font-weight: bold;
     padding: 10px 20px;
