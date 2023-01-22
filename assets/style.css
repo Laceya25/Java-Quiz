@@ -5,13 +5,7 @@
 }
 
 body {
-    padding: 0;
-    margin: 0;
-    display: flex;
-    width: 100vw;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
+  background-color: white;
 }
 
 .nav {
@@ -20,14 +14,36 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin: 5%;
-    padding: 4%;
+    margin: 3%;
+    padding: 2%;
     font-size: 1.5em;
-    font-weight: 500;
+    font-weight: 600;
+
 }
+ #high-scores {
+    justify-content: flex-start;
+    color: blueviolet;
+    cursor: pointer;
+    text-decoration: none;
+ }
 
+ #timer {
+    justify-content: flex-end;
+    color: blueviolet;
+ }
 
+.sp-style {
+    text-align: center;
+    margin: 1%;
+    padding: 2%;
+    font-size: 1.80em;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
 
+}
 .container {
     width: 500px;
     max-width: 80%;
