@@ -8,35 +8,68 @@
 </head>
 
 <body>
-    <!--going to attempt the Nav bar AGAIN-->
+  <!--Main Container for everything-->
+  <div class="container">
+    <!--nothing changes in nav except for time-->
     <nav class="nav">
-        <a id="highscore"  href="#scores">View High Scores</a>  
-       <span id="timer">Time Left:<span id="display-time">0</span>
+        <!--HighScore-->
+    <a id="high-scores"> View High Scores</a>
+    <!--Timer-->
+    <span id="timer">Time Left: <span id="time-left">0</span>
     </nav>
 
-    <!-- try the homepage AGAIN-->
-    <section id="startpage" class="start-pg">
-        <h1> Code Quiz</h1>
-        <p>
-            Answer the following questions within the time limit, BUT if you answer incorrectly time will be subtracted from the timer so
-            BE CAREFUL! You will have 50 seconds per question. GOOD LUCK!
-        </p>
-    </section>
-   <div class="container"> 
-    <div id="question-conatiner" class="hide">
-        <div id="questions">Question</div>
-        <div id="answer-buttons" class="btn-grid">
-            <button class="btn">Answer 1</button>
-            <button class="btn">Answer 1</button>
-            <button class="btn">Answer 1</button>
-            <button class="btn">Answer 1</button>
+   <!--Begining page-->
+   <section id="start-page" class="sp-style">
+    <h1> Coding Quiz</h1>
+    <p>
+        Answer the following questions within the time limit BUT if you answer incorrectly time will be subtracted from the timer
+        so be careful! you will have 50 seconds per question. GOOD LUCK!
+    </p>
+    <div class="btn-flex">
+        <button id=start-btn class ="btn">Start Quiz</button>
         </div>
-    </div>
-    <div class="controls">
-        <button id="start-btn" class="start-btn btn">Start</button>
-    </div>
+        </section>
 
-</div>  
+        <!--questions part -->
+        <div class="container">
+        <div id="question-container" class="hide"></div>
+        <div id="question">Question 
+        <div id="answer-buttons" class="btn-grid"></div>
+     
+           <p> What is not a type of primitive data</p>
+        </div>
+        </div>
+        <div id="answer-btns" class="btn-flex">
+                <button class="btn">Answer 1</button>
+                <button class="btn">Answer 2</button>
+                <button class="btn">Answer 3</button>
+                <button class="btn">Answer 4</button>
+            </div>
+        </div>
+        
+<!--correct and wrong responses-->
+        <div class="h-style h3-style">
+            <h3 id="correct-ans" class="hide">Correct!</h3>
+            <h3 id="incorrect-ans" class="hide">Incorrect!</h3>
+            </div>
+<!--Where high scores are kept form-->
+            <section id="score-data" class="sp-style hide">
+                <h2>Finished!</h2>
+                <p> You have a score of...</p>
+                <form></form>
+            </section>
+
+            <!--HighScores Link-->
+           <section id="score-log" class="sp-styl hide">
+            <h2>High Scores:</h2>
+            <!--results-->
+            <div id="form-btns" class="btn-flex">
+                <button id="restart-btn" class="restart-btn btn">Restart Quiz</button>
+            </div>
+           </section>
+            </div>
+        
+    </div>
 </body>
 <script defer src="./assets/script.js"></script>
 </html>
