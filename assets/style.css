@@ -6,6 +6,8 @@
 
 body {
   background-color: white;
+  display: flex;
+  flex-direction: column;
 }
 
 .nav {
@@ -14,8 +16,6 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin: 3%;
-    padding: 2%;
     font-size: 1.5em;
     font-weight: 600;
 
@@ -24,7 +24,10 @@ body {
     justify-content: flex-start;
     color: blueviolet;
     cursor: pointer;
-    text-decoration: none;
+
+ }
+ #high-scores:hover {
+    color: blue;
  }
 
  #timer {
@@ -32,17 +35,21 @@ body {
     color: blueviolet;
  }
 
-.sp-style {
+#start-page{
     text-align: center;
     margin: 1%;
     padding: 2%;
     font-size: 1.80em;
     display: flex;
     flex-direction: column;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     align-content: center;
     justify-content: center;
 
+}
+
+#start-page.hidden {
+    display: none;
 }
 
 
@@ -82,7 +89,7 @@ body {
     background-color: red;
 }
 
-
+.question
 
 .controls {
     display: flex;
