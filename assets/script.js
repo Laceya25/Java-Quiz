@@ -7,6 +7,33 @@ let answerTwo= document.getElementById('Answer2')
 let answerThree= document.getElementById('Answer3')
 let answerFour= document.getElementById('Answer4')
 
+//going to attempt to get some questions going//
+
+let index=0;
+
+let questArray = [
+    {
+
+        question: "What is NOT considered a type of primitive data: ",
+        answerChoices: ["1. Booleans", "2. Strings.", "3. Flex.", "4. Numbers."],
+        rightAnswer: "3. Flex"
+    }
+]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 startButton.addEventListener('click', startGame)
 
 
